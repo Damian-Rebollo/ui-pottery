@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="esp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller de cerámica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>Taller de cerámica</h1>
+        <p>Un espacio para crear piezas con tus propias manos.</p>
+        <img src="/src/interface/taller.svg" width="200" height="200" />
+        <hr />
+        <p>Abierto de lunes a viernes, de 10:00 a 19:00.</p>
+      </header>
+      <main>
+        <section>
+          <h4>Próximos talleres</h4>
+          <ul>
+            <li>Iniciación — USD 25 · Martes 18:00</li>
+            <li>Modelado a mano — USD 20 · Jueves 17:00</li>
+            <li>Esmaltado creativo — USD 18 · Sábado 11:00</li>
+          </ul>
+        </section>
+        <section>
+          <h6>Consultas e inscripciones</h6>
+          <form id="contact-form">
+            <div>
+              <input id="name" name="name" type="text" placeholder="Nombre" />
+            </div>
+            <div>
+              <input id="email" name="email" type="email" placeholder="Correo electrónico" />
+            </div>
+            <div>
+              <textarea id="message" name="message" rows="3" placeholder="Tu consulta"></textarea>
+            </div>
+            <fieldset>
+              <legend>¿Ya asististe a uno de nuestros cursos?</legend>
+              <div>
+                <input type="radio" id="attended-yes" name="attended" value="yes" required />
+                <label for="attended-yes">Sí</label>
+              </div>
+              <div>
+                <input type="radio" id="attended-no" name="attended" value="no" />
+                <label for="attended-no">No, sería mi primera vez</label>
+              </div>
+            </fieldset>
+            <div>
+              <label for="notifications">¿Te gustaría recibir notificaciones?</label>
+              <div>
+                <input type="checkbox" id="notifications" name="notifications" role="switch" switch />
+              </div>
+            </div>
+            <button type="submit">Enviar consulta</button>
+            <p id="status" role="status"></p>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <script type="module" src="/src/interface/main.ts"></script>
+  </body>
+</html>
