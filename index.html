@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="esp">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,15 +9,15 @@
   <body>
     <div>
       <header>
-        <h1>Taller de cerámica</h1>
+        <h1 class="page-title">Taller de cerámica</h1>
         <p>Un espacio para crear piezas con tus propias manos.</p>
-        <img src="/src/interface/taller.svg" width="200" height="200" />
+        <img src="/src/interface/taller.svg" width="200" alt="imagen_logo" height = "200  "/>
         <hr />
         <p>Abierto de lunes a viernes, de 10:00 a 19:00.</p>
       </header>
       <main>
         <section>
-          <h4>Próximos talleres</h4>
+          <h2 class="section-title">Próximos talleres</h2>
           <ul>
             <li>Iniciación — USD 25 · Martes 18:00</li>
             <li>Modelado a mano — USD 20 · Jueves 17:00</li>
@@ -25,35 +25,38 @@
           </ul>
         </section>
         <section>
-          <h6>Consultas e inscripciones</h6>
+          <h2 class="section-title">Consultas e inscripciones</h2>
           <form id="contact-form">
             <div>
-              <input id="name" name="name" type="text" placeholder="Nombre" />
+              <label for = "name" class ="form-label" > Ingrese nombre </label>
+              <input  class ="form-control" id="name" class ="form-label" name="name" type="text" placeholder="Nombre" />
             </div>
             <div>
-              <input id="email" name="email" type="email" placeholder="Correo electrónico" />
+               <label for = "email" class = "form-label" > Ingrese email </label>
+              <input class ="form-control" id="email"  name="email" type="email" placeholder="Correo electrónico" />
             </div>
             <div>
-              <textarea id="message" name="message" rows="3" placeholder="Tu consulta"></textarea>
+               <label class = "form-label" for = "message"  > Ingrese consulta </label>
+              <textarea class ="form-control" id="message"  name="message" rows="3" placeholder="Tu consulta"></textarea>
             </div>
             <fieldset>
               <legend>¿Ya asististe a uno de nuestros cursos?</legend>
-              <div>
-                <input type="radio" id="attended-yes" name="attended" value="yes" required />
-                <label for="attended-yes">Sí</label>
+              <div class = "form-field">
+                <input class = "radio" type="radio" id="attended-yes" name="attended" value="yes" required />
+                <label class="form-label" for="attended-yes">Sí</label>
               </div>
-              <div>
-                <input type="radio" id="attended-no" name="attended" value="no" />
-                <label for="attended-no">No, sería mi primera vez</label>
+              <div class = "form-field">
+                <input   class = "radio" type="radio" id="attended-no" name="attended" value="no" />
+                <label class="form-label" for="attended-no">No, sería mi primera vez</label>
               </div>
             </fieldset>
             <div>
-              <label for="notifications">¿Te gustaría recibir notificaciones?</label>
+              <label class="form-label" for="notifications">¿Te gustaría recibir notificaciones?</label>
               <div>
-                <input type="checkbox" id="notifications" name="notifications" role="switch" switch />
+                <input class = "switch" type="checkbox" id="notifications" name="notifications" role="switch" switch />
               </div>
             </div>
-            <button type="submit">Enviar consulta</button>
+            <button class = "btn-solid" class = "theme-primarytype" type="submit">Enviar consulta</button>
             <p id="status" role="status"></p>
           </form>
         </section>

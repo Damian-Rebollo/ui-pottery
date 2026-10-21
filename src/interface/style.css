@@ -1,7 +1,8 @@
 body {
-  background: #c9a9a1;
-  color: #8b6b65;
+  background: #c89a8f;
+  color: #3f302c;
   font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 body > div {
@@ -11,6 +12,37 @@ body > div {
 
 header {
   text-align: center;
+}
+
+.page-title {
+  color: #3f302c;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  color: #4b302a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+header p,
+main li,
+label,
+legend,
+#status {
+  color: #3f302c;
+  font-size: 1rem;
+}
+
+legend {
+  font-weight: 700;
+}
+
+main li {
+  line-height: 1.5;
 }
 
 main {
